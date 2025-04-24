@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engineer Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" typ="text/css" href="{% static 'dashboards/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'dashboards/logo.png' %}" alt="Logo"  width="75" height="75">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-button">Log In</a></li>
+                <li><a href="#" class="nav-button">Register</a></li>
+                <li><a href="#" class="nav-button">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Engineer Dash Board</h2>
+            <div class="account-details">
+                <h3>Account Details</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br>
+
+                    <label for="role">Role:</label>
+                    <input type="text" id="role" name="role"><br>
+
+                    <label for="role-description">What can I do in this assigned role?</label>
+                    <input type="text" id="role-description" name="role-description"><br>
+                </form>
+                <button class="health-check-button">Health Check</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
